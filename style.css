@@ -15,6 +15,8 @@ h1{
     margin: 1rem;
     background-image: linear-gradient(bisque, rgb(253, 176, 148));
     border-radius: 20px;
+    box-shadow: 0 0 50px rgb(235, 9, 9);
+text-shadow: 0 0 50px rgb(185, 4, 4);
 }
 main {
   min-width: 980px;
@@ -171,13 +173,4 @@ background-color: aliceblue;
 top: -220px;
 left: 8vw;
 font-size: 4rem;
-}
-#span1{
-font-size: 0.9rem;
-}
-#span1{
-  font-size: 0.9rem;
-}
-#span1{
-  
 }
