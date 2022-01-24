@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+aside{
+    float: left;
+    width: 30%;
+line-height: 2rem;
+padding: 2rem;
+border: 1px solid gray;
+border-radius: 20px;
+background-color: bisque;
+margin: 1%;
+text-align: center;
+}
+section{
+    float: right;
+    width: 65%;
+    line-height: 2rem;
+    padding: 2rem;
+    border: 1px solid gray;
+    border-radius: 20px;
+    background-color: bisque;
+    margin: 1%;
+}
+.box{
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+.avatars{
+    width: 5rem;
+}
+button{
+    display: block;
+    margin: auto;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: none;
+    background-color: darkblue;
+    color: aliceblue;
+}

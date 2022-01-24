@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Sayfası</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside>
+      <form action="./comic.html" method="get">
+        <label for="fullname">Adınız ve Soyadınız</label><br />
+        <input
+          onchange="changed()"
+          type="text"
+          id="fullname"
+          name="fullname"
+        /><br />
+
+        <label for="date">Doğum tarihiniz</label><br />
+        <input type="date" name="date" id="date" /><br />
+        <label for="info">Kendinizi tanıtın</label><br />
+        <textarea
+          name="info"
+          id="info"
+          cols="50"
+          rows="10"
+          maxlength="300"
+          placeholder="En fazla 300 karakter giriniz"
+        ></textarea
+        ><br />
+        <label for="avatar">Avatarınızı seçin</label><br />
+        <input
+          type="radio"
+          name="avatar"
+          id="kadin"
+          value="https://cdn.pixabay.com/photo/2021/01/04/10/41/icon-5887126_960_720.png"
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2021/01/04/10/41/icon-5887126_960_720.png"
+          alt=""
+          class="avatars"
+        />
+        <input
+          type="radio"
+          name="avatar"
+          id="erkek"
+          value="https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584_960_720.png"
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584_960_720.png"
+          alt=""
+          class="avatars"
+        /><br />
+        <div><button type="submit">Gönder</button></div>
+      </form>
+    </aside>
+    <section>
+      <div id="container">
+        <div>
+          <div class="box"><img src="" alt="" id="p-avatar"/><h2 id="p-fullname">Buraya adınız gelecek</h2></div>
+          
+          <div class="box" id="p-age"></div>
+        </div>
+
+        <div class="box"><p id="p-info">Buraya hakkınızdaki bilgiler gelecek</p></div>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
