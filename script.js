@@ -15,7 +15,7 @@ function changeBirth() {
     const splitDate = ad.value.split("-");
     let yil = splitDate[0], ay=splitDate[1], gun=splitDate[2];
     let age = calculateAge(ay,gun,yil)
-    document.getElementById('p-age').innerHTML=age;
+    document.getElementById('p-age').innerHTML="Yaş: "+age;
 }
 function changeInfo() {
     var ad=document.getElementById("info");

@@ -46,7 +46,6 @@
             rows="10"
             maxlength="500"
             placeholder="En fazla 500 karakter giriniz"
-            
           ></textarea
           ><br />
           <label for="avatar">Avatarınızı seçin</label><br />
@@ -84,7 +83,14 @@
             /></label>
           </div>
           <br />
-          <div><button  type="submit" id="button">Gönder</button></div>
+          <div id="button-box">
+            <button type="submit" id="button">Gönder</button>
+            <div id="balon-container">
+              <div class="balon" id="balon1"><span id="span1">Yap</span> </div>
+              <div class="balon" id="balon2"><span id="span2">ve</span> </div>
+              <div class="balon" id="balon3"><span id="span3">Hayal et</span> </div>
+            </div>
+          </div>
         </form>
       </aside>
       <section>
@@ -107,6 +113,7 @@
         </div>
       </section>
     </main>
+
     <script src="./script.js"></script>
   </body>
 </html>
