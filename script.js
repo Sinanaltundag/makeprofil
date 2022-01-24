@@ -42,3 +42,8 @@ function calculateAge(birthMonth, birthDay, birthYear)
   }
   return age;
 }
+
+function click() {
+    let cl = document.querySelector("#button")
+    cl.style.cssText="position: relative; top:5px; left:5px; "
+}
