@@ -1,42 +1,108 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: large;
+  border: none;
 }
-aside{
-    float: left;
-    width: 30%;
-line-height: 2rem;
-padding: 2rem;
-border: 1px solid gray;
-border-radius: 20px;
-background-color: bisque;
-margin: 1%;
-text-align: center;
-}
-section{
-    float: right;
-    width: 65%;
-    line-height: 2rem;
-    padding: 2rem;
-    border: 1px solid gray;
-    border-radius: 20px;
+body{
     background-color: bisque;
-    margin: 1%;
 }
-.box{
-    background-color: aquamarine;
-    border-radius: 10px;
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem;
+    background-image: repeating-linear-gradient(bisque, rgb(253, 176, 148));
 }
-.avatars{
-    width: 5rem;
+main {
+  min-width: 980px;
+  
 }
-button{
-    display: block;
-    margin: auto;
-    padding: 10px 15px;
-    border-radius: 15px;
-    border: none;
-    background-color: darkblue;
-    color: aliceblue;
+aside {
+  float: left;
+  width: 30%;
+  line-height: 2rem;
+  padding: 2rem;
+  border: 1px solid gray;
+  border-radius: 20px;
+  background-color: bisque;
+  margin: 1%;
+  text-align: center;
+  background-image: linear-gradient(bisque, rgb(253, 176, 148), brown);
+}
+section {
+  float: right;
+  width: 65%;
+  line-height: 2rem;
+  padding: 2rem;
+  border: 1px solid gray;
+  border-radius: 20px;
+  background-color: bisque;
+  margin: 1%;
+  overflow: auto;
+  box-shadow: 5px 5px brown;
+  min-width: 640px;
+  background-image: linear-gradient(bisque, rgb(253, 176, 148));
+}
+.box {
+  background-color: rgb(253, 176, 148);
+  border-radius: 10px;
+  overflow: auto;
+  box-shadow: 5px 5px brown;
+}
+.inputs, textarea {
+  width: 90%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  resize: none;
+}
+
+.avatar-box {
+  display: inline-block;
+}
+.avatars {
+  width: 5rem;
+}
+#p-avatar {
+  width: 5rem;
+
+  float: left;
+  margin: 1rem;
+}
+#p-fullname {
+  font-size: 2vw;
+  float: left;
+  margin: 2rem 1rem;
+
+  font-family: "Alfa Slab One", cursive;
+  width: 40%;
+}
+#p-age {
+  float: right;
+  margin: 2rem 1rem;
+
+  font-family: "Alfa Slab One", cursive;
+  font-size: 1.5vw;
+  width: 25%;
+  text-align: right;
+}
+
+#p-info {
+  padding: 1rem;
+  font-size: 2vw;
+  font-family: "Caveat", cursive;
+}
+button {
+  display: block;
+  margin: 2rem auto;
+  padding: 10px 35px;
+  border-radius: 15px;
+  border: none;
+  background-color:chocolate;
+  color: aliceblue;
+  box-shadow: 5px 5px brown;
+}
+button:hover{
+    
 }

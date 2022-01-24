@@ -6,68 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profil Sayfası</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Caveat:wght@500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <aside>
-      <form action="./comic.html" method="get">
-        <label for="fullname">Adınız ve Soyadınız</label><br />
-        <input
-          onchange="changed()"
-          type="text"
-          id="fullname"
-          name="fullname"
-        /><br />
+    <header><h1>Canlı Profil Sayfası Oluşturma</h1></header>
+    <main>
+      <aside>
+        <form action="#" method="get">
+          <label for="fullname">Adınız ve Soyadınız</label><br />
+          <input
+            oninput="changeName()"
+            type="text"
+            id="fullname"
+            name="fullname"
+            class="inputs"
+            placeholder="Tam adınızı giriniz"
+          /><br />
 
-        <label for="date">Doğum tarihiniz</label><br />
-        <input type="date" name="date" id="date" /><br />
-        <label for="info">Kendinizi tanıtın</label><br />
-        <textarea
-          name="info"
-          id="info"
-          cols="50"
-          rows="10"
-          maxlength="300"
-          placeholder="En fazla 300 karakter giriniz"
-        ></textarea
-        ><br />
-        <label for="avatar">Avatarınızı seçin</label><br />
-        <input
-          type="radio"
-          name="avatar"
-          id="kadin"
-          value="https://cdn.pixabay.com/photo/2021/01/04/10/41/icon-5887126_960_720.png"
-        />
-        <img
-          src="https://cdn.pixabay.com/photo/2021/01/04/10/41/icon-5887126_960_720.png"
-          alt=""
-          class="avatars"
-        />
-        <input
-          type="radio"
-          name="avatar"
-          id="erkek"
-          value="https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584_960_720.png"
-        />
-        <img
-          src="https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584_960_720.png"
-          alt=""
-          class="avatars"
-        /><br />
-        <div><button type="submit">Gönder</button></div>
-      </form>
-    </aside>
-    <section>
-      <div id="container">
-        <div>
-          <div class="box"><img src="" alt="" id="p-avatar"/><h2 id="p-fullname">Buraya adınız gelecek</h2></div>
-          
-          <div class="box" id="p-age"></div>
+          <label for="birth">Doğum tarihiniz</label><br />
+          <input
+            onchange="changeBirth()"
+            type="date"
+            name="date"
+            id="birth"
+            max="2010-12-31"
+            class="inputs"
+          /><br />
+          <label for="info">Kendinizi tanıtın</label><br />
+          <textarea
+            oninput="changeInfo()"
+            name="info"
+            id="info"
+            cols=""
+            rows="10"
+            maxlength="300"
+            placeholder="En fazla 300 karakter giriniz"
+            
+          ></textarea
+          ><br />
+          <label for="avatar">Avatarınızı seçin</label><br />
+          <div class="avatar-box">
+            <input
+              class="avatar-s"
+              onclick="changeAvatar(0)"
+              type="radio"
+              name="avatar"
+              id="kadin"
+              value="https://cdn.pixabay.com/photo/2021/01/04/10/41/icon-5887126_960_720.png"
+            />
+            <label for="kadin"
+              ><img
+                src="https://cdn.pixabay.com/photo/2021/01/04/10/41/icon-5887126_960_720.png"
+                alt=""
+                class="avatars"
+            /></label>
+          </div>
+          <!-- onclick="changeAvatar(1)" oninput ="changeAvatar(1)" ikiside olur both of them can use-->
+          <div class="avatar-box">
+            <input
+              oninput="changeAvatar(1)"
+              class="avatar-s"
+              type="radio"
+              name="avatar"
+              id="erkek"
+              value="https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584_960_720.png"
+            />
+            <label for="erkek"
+              ><img
+                src="https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584_960_720.png"
+                alt=""
+                class="avatars"
+            /></label>
+          </div>
+          <br />
+          <div><button type="submit">Gönder</button></div>
+        </form>
+      </aside>
+      <section>
+        <div id="container">
+          <div>
+            <div class="box" id="ad-av">
+              <img
+                src="https://cdn.pixabay.com/photo/2016/09/28/02/14/user-1699635_960_720.png"
+                alt=""
+                id="p-avatar"
+              />
+              <h2 id="p-fullname">Buraya adınız gelecek</h2>
+              <div id="p-age">Bugünkü yaşınız gelecek</div>
+            </div>
+          </div>
+
+          <div class="box">
+            <p id="p-info">Buraya hakkınızdaki bilgiler gelecek</p>
+          </div>
         </div>
-
-        <div class="box"><p id="p-info">Buraya hakkınızdaki bilgiler gelecek</p></div>
-      </div>
-    </section>
-
+      </section>
+    </main>
     <script src="./script.js"></script>
   </body>
 </html>
