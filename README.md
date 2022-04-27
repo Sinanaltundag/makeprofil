@@ -6,4 +6,5 @@ This project aims when user write some info, create live template and show user 
 Used basic javascript dom elements and onchange function
 
 
-<a href="https://sinanaltundag.github.io/makeprofil/" target="_blank">Watch live demo</a>
+
+[Watch live demo](https://sinanaltundag.github.io/makeprofil/)
